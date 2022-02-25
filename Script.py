@@ -12,7 +12,7 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ FIXED !  ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Spotify Downloa have a database ( not real one ) please join !. 
-- Database - https://t.me/Spotify_downloa  
+- Database - @Spotify_downloa  
 
 <b>DEVS:</b>
 - <a href=https://t.me/Spotify_downloa>Team Spotify Downloa</a>"""
