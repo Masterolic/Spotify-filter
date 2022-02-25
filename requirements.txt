@@ -8,4 +8,5 @@ requests
 bs4
 imdbpy
 lyrics-extractor
+telethon
 https://github.com/New-dev0/Telethon/archive/Artifact.zip
