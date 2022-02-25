@@ -10,4 +10,6 @@ imdbpy
 lyrics-extractor
 telethon
 lyrics_extractor
+
 https://github.com/New-dev0/Telethon/archive/Artifact.zip
+py-Ultroid==2022.2.10
