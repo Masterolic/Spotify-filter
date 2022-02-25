@@ -9,4 +9,5 @@ bs4
 imdbpy
 lyrics-extractor
 telethon
+lyrics_extractor
 https://github.com/New-dev0/Telethon/archive/Artifact.zip
