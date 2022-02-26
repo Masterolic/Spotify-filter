@@ -19,7 +19,7 @@
 
 
 import random
-
+from pyrogram import client
 from lyrics_extractor import SongLyrics as sl
 from lyrics_extractor.lyrics import LyricScraperException as LyError
 from telethon.errors.rpcerrorlist import UserAlreadyParticipantError
