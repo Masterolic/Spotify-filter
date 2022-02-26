@@ -44,8 +44,8 @@ from telethon.tl.types import InputMessagesFilterMusic as filtermus
 from . import *
 
 
-@Client.on_message(pattern=r"lyrics ?(.*)")
-async def original(event):
+@Client.on_message(filters.command('lyrics')
+async def lyrics(client , message):
     if not event.pattern_match.group(1):
         return await event.eor("give query to search.")
     noob = event.pattern_match.group(1)
@@ -67,7 +67,7 @@ async def original(event):
     await ab.delete()
 
 
-@Client.on_message(pattern="song ?(.*)")
+@Client.on_message(filters.command('song')
 async def _(event):
     ultroid_bot = event.client
     try:
