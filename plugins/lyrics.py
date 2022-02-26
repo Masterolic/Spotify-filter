@@ -44,8 +44,8 @@ from telethon.tl.types import InputMessagesFilterMusic as filtermus
 from . import *
 
 
-@Client.on_message(filters.command("lyrics") & filters.user(ADMINS) & filters.reply)
-async def lyrics(client , message):
+@Client.on_message()
+async def _(event):
     if not event.pattern_match.group(1):
         return await event.eor("give query to search.")
     noob = event.pattern_match.group(1)
