@@ -527,9 +527,7 @@ async def save_template(client, message):
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
     
     @Client.on_message(pattern=r"lyrics ?(.*)")
-
 async def original(event):
-
     if not event.pattern_match.group(1):
 
         return await event.eor("give query to search.")
