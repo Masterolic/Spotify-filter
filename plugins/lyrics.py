@@ -67,7 +67,7 @@ async def _(event):
     await ab.delete()
 
 
-@Client.on_message(filters.command('song'))
+@Client.on_message()
 async def _(event):
     ultroid_bot = event.client
     try:
