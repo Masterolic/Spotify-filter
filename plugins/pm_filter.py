@@ -883,14 +883,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/TamilMVOfficials")]
+            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/Spotify_downloa")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/TamilMVOfficials")]
+            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/Spotify_downloa")]
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
@@ -967,7 +967,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("I couldn't find any song in that name wait a while you will get it ! .")
         await asyncio.sleep(8)
         await k.delete()
         return
