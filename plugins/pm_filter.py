@@ -361,7 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚 𝙂𝙧𝙤𝙪𝙥', url=f'https://t.me/TamilMV_Collections')
+                InlineKeyboardButton('SPOTIFY GROUP ', url=f't.me/Spotify_downloa')
             ]
             ]
             
@@ -411,7 +411,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/TamilMV_Collections')
+                InlineKeyboardButton('spotify , track , playlist', url=f'https://t.me/Spotify_downloa')
             ]
             ]
         await query.answer()
