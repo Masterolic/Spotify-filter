@@ -15,14 +15,6 @@ import re
 import json
 import base64
 logger = logging.getLogger(__name__)
-import random
-
-from lyrics_extractor import SongLyrics as sl
-from lyrics_extractor.lyrics import LyricScraperException as LyError
-from telethon.errors.rpcerrorlist import UserAlreadyParticipantError
-from telethon.tl.functions.messages import ImportChatInviteRequest
-from telethon.tl.types import InputMessagesFilterMusic as filtermus
-
 
 BATCH_FILES = {}
 
@@ -525,5 +517,3 @@ async def save_template(client, message):
     template = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
-    
-    
