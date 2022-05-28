@@ -508,13 +508,3 @@ async def save_template(client, message):
     template = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
-
-
-@Client.on_message( filters.incoming & ~filters.edited)
-async def respond(bot,message):
-    if message.text.startswith('https://open.spotify.com'):
-        await sleep(0.1)
-    else:
-        M = await message.reply_text(f"Check your url starts with https://open.spotify.com or press the above buttons to search 🔎 ")
-        await sleep(5)
-        await M.delete()
