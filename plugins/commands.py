@@ -2,6 +2,7 @@ import os
 import logging
 import random
 import asyncio
+from asyncio import sleep
 from Script import script
 from pyrogram import Client, filters
 from pyrogram.errors import ChatAdminRequired, FloodWait
@@ -514,4 +515,6 @@ async def respond(bot,message):
     if message.text.startswith('https://open.spotify.com'):
         await sleep(0.1)
     else:
-        await message.reply_text(f"Check your url starts with https://open.spotify.com or press the above buttons to search 🔎 ")
+        M = await message.reply_text(f"Check your url starts with https://open.spotify.com or press the above buttons to search 🔎 ")
+        await sleep(15)
+        await M.delete()
