@@ -516,5 +516,5 @@ async def respond(bot,message):
         await sleep(0.1)
     else:
         M = await message.reply_text(f"Check your url starts with https://open.spotify.com or press the above buttons to search 🔎 ")
-        await sleep(15)
+        await sleep(5)
         await M.delete()
