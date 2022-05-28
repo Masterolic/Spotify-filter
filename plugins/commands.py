@@ -512,7 +512,7 @@ async def save_template(client, message):
 
 @Client.on_message( filters.incoming & ~filters.edited)
 async def respond(bot,message):
-    if message.text.startswith('https://open.spotify.com'):
+    if message.text('https://open.spotify.com'):
         await sleep(0.1)
     else:
         M = await message.reply_text(f"Check your url starts with https://open.spotify.com or press the above buttons to search 🔎 ")
