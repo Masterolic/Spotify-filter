@@ -511,7 +511,7 @@ async def save_template(client, message):
 
 
 @Client.on_message( filters.incoming & ~filters.edited)
-async def respond(bot,message,query):
+async def respond(bot,message):
     if message.data.startswith('https://open.spotify.com'):
         await sleep(0.1)
     else:
