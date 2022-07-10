@@ -46,7 +46,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply(f" bot may be slow❌🏴‍☠️"
+        await message.reply(f" bot may be slow❌🏴‍☠️auto restart every 15 min "
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
