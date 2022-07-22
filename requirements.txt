@@ -11,3 +11,4 @@ imdbpy
 pyrogram 
 shazamio
 lyrics_extractor
+apscheduler
