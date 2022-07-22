@@ -345,7 +345,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
 
-            except RPCError
+            except RPCError:
                 pass
                 await message.reply(f"I am Not an Admin here")
             except Exception as e:
