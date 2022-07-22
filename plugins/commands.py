@@ -19,7 +19,25 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
-@Client.on_message(filters.command("stahht") & filters.incoming & ~filters.edited)
+
+
+
+
+def restar():
+    # await Mbot.restart()
+     #Mbot.restart()
+     print("restating")
+   #  shutil.rmtree("/tmp/")
+   #  print("TMP/* deleted successfully")
+     execl(executable, executable,"start.sh")
+scheduler = BackgroundScheduler()
+scheduler.add_job(restar, "interval", seconds=5400)
+scheduler.start()
+
+
+
+
+@Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
